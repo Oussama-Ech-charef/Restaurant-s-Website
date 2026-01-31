@@ -82,3 +82,57 @@
     padding: 4px 5px;
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .header .nav, .header .account {
+        display: none;
+    }
+
+    .search {
+        width: 60vw;
+
+    }
+
+    .bar {
+        display: block;
+        cursor:  pointer;
+    }
+
+    .headerbar {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(252, 231, 216);
+    }
+
+    .headerbar .account, .headerbar .nav {
+        display: block;
+        font-size: 18px;
+    }
+
+    .bar .fa-xmark {
+        display: none;
+        top: 20px;
+        right: 5w;
+        position: absolute;
+        font-size: 25px;
+    }
+    .headerbar .nav ul {
+        flex-direction: column;
+        margin-top: 10px ;
+        text-align: center;
+    }
+
+    .headerbar .nav li {
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px rgb(252, 193, 169);
+    }
+}
