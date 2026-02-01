@@ -87,9 +87,10 @@
 .srchicon {
     background-color: rgb(255, 210, 210);
     display: block;
-    padding: 4px 5px;
+    padding: 4px 5px ;
     cursor: pointer;
 }
+
 
 
 @media only screen and (max-width: 768px) {
@@ -105,6 +106,7 @@
     .bar {
         display: block;
         cursor:  pointer;
+            transition: transform 0.3s ease;
     }
 
     .headerbar {
@@ -115,9 +117,13 @@
         top: 0;
         width: 100%;
         bottom: 0;
-        right: 0;
+        right: -100%;
         background-color: rgb(252, 231, 216);
+        transition: right 0.5s ease;
     }
+
+
+
 
     .headerbar .account, .headerbar .nav {
         display: block;
@@ -125,10 +131,19 @@
     }
 
     .bar .fa-xmark {
-        display: block;
+        display: none;
         top: 20px;
         right: 5w;
         position: absolute;
+        font-size: 25px;
+        transition: transform 0.3s ease;
+    }
+
+    .bar .fa-xmark:hover {
+    transform: rotate(90deg); 
+    }
+
+    .bar .fa-bars {
         font-size: 25px;
     }
     .headerbar .nav ul {
