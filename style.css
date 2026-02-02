@@ -256,4 +256,32 @@
 
 @media only screen and (max-width: 550px) {
     
+
+
+    .main_slide div:nth-child(1) {
+        font-size: 16px;
+    }
+    .main_slide div:nth-child(1) p{
+    padding-top: 5px;
+    margin: 10px 0;
+    font-size: 11px;
+    }
+
+    .red_btn {
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+
+    .main_slide div:nth-child(1) span{
+        text-underline-offset: 5px;
+    }
+
+    .main_slide div:nth-child(2) img {
+        width: 70vw;
+    }
+
 }
