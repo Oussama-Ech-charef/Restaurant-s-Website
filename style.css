@@ -231,6 +231,58 @@
 }
 
 
+.main_slide2 {
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodimg {
+    flex: 0.5;
+}
+
+.foodimg img {
+    max-width: 500px;
+    width: 45vw;
+}
+
+
+.question {
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.question h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.q-ans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.q-ans img {
+    width: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     .header .nav, .header .account {
